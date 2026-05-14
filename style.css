@@ -778,10 +778,6 @@ table {
 .manufacturingProcessSection {
   border-bottom: 1px solid #e1e3e8;
   background-image: url("../assets//images/homeScreenBg.svg");
-  padding-left: 8%;
-  padding-right: 8%;
-  padding-top: 5vw;
-  padding-bottom: 5vw;
 }
 
 .sectionTitle {
@@ -1414,7 +1410,7 @@ table {
 }
 
 .container {
-  max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
   background: white;
   border-radius: 20px;
@@ -1425,6 +1421,7 @@ table {
 /* ===== DESKTOP VERSION ===== */
 .desktop-view {
   display: block;
+  width: 100%;
 }
 
 .mobile-view {
@@ -1433,7 +1430,7 @@ table {
 
 /* Tab Navigation */
 .tabs-container {
-  padding: 30px 40px 0;
+  padding: 32px 32px 0;
   display: flex;
   gap: 0;
   align-items: center;
@@ -1486,7 +1483,7 @@ table {
 
 /* Content Area */
 .content-area {
-  padding: 40px;
+  padding: 32px;
 }
 
 .tab-content {
@@ -1516,17 +1513,16 @@ table {
 }
 
 .content-title {
-  font-size: 32px;
-  font-weight: 700;
-  color: #1e293b;
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--color-heading);
   margin-bottom: 16px;
   letter-spacing: -0.5px;
 }
 
 .content-description {
-  font-size: 15px;
-  color: #64748b;
-  line-height: 1.7;
+  font-size: 18px;
+  color: #4d545c;
   margin-bottom: 24px;
 }
 
@@ -1541,7 +1537,7 @@ table {
   align-items: center;
   gap: 12px;
   font-size: 14px;
-  color: #475569;
+  color: var(--color-heading);
 }
 
 .feature-item::before {
@@ -1563,12 +1559,13 @@ table {
   width: 100%;
   border-radius: 16px;
   overflow: hidden;
+  height: 315px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 .content-image img {
   width: 100%;
-  height: 420px;
+  height: 315px;
   object-fit: cover;
   display: block;
 }
@@ -1589,7 +1586,7 @@ table {
 
   .content-image {
     flex: 0 0 50%;
-    min-height: 400px;
+    /* min-height: 400px; */
   }
 }
 
@@ -1616,6 +1613,10 @@ table {
 
   .paddingAll {
     padding: 80px;
+  }
+
+  .content-image {
+    height: 258px;
   }
 
   .applicationsTextContainer {
@@ -1750,6 +1751,10 @@ table {
   main {
     padding-left: 60px;
     padding-right: 60px;
+  }
+
+  .content-image {
+    height: 236px;
   }
 
   .emailInputContainer {
@@ -2046,6 +2051,10 @@ table {
     padding-right: 48px;
   }
 
+  .content-description {
+    font-size: 16px;
+  }
+
   .emailButton {
     width: 158px;
     padding: 10px 6px;
@@ -2137,16 +2146,15 @@ table {
   }
 
   .mobile-content-title {
-    font-size: 24px;
-    font-weight: 700;
-    color: #1e293b;
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--color-heading);
     margin-bottom: 12px;
   }
 
   .mobile-content-description {
-    font-size: 14px;
-    color: #64748b;
-    line-height: 1.6;
+    font-size: 16px;
+    color: #4d545c;
     margin-bottom: 16px;
   }
 
@@ -2162,7 +2170,7 @@ table {
     align-items: center;
     gap: 10px;
     font-size: 13px;
-    color: #475569;
+    color: var(--color-heading);
   }
 
   .mobile-feature-item::before {
@@ -2190,7 +2198,7 @@ table {
 
   .mobile-image img {
     width: 100%;
-    height: 380px;
+    height: 360px;
     display: block;
   }
 
@@ -2278,6 +2286,18 @@ table {
 @media screen and (max-width: 360px) {
   .logoAndText {
     gap: 15px;
+  }
+
+  .mobile-content-description {
+    font-size: 14px;
+  }
+
+  .content-description {
+    font-size: 14px;
+  }
+
+  .mobile-image img {
+    height: 166px;
   }
 
   .applicationsCard {
