@@ -579,10 +579,6 @@ table {
 .frequentlyAskedQuestionsContainer {
   background-image: url("../assets//images/homeScreenBg.svg");
   border-bottom: 1px solid #e1e3e8;
-  padding-top: 5vw;
-  padding-bottom: 5vw;
-  padding-left: 8%;
-  padding-right: 8%;
 }
 
 .accordionItem {
@@ -633,7 +629,7 @@ table {
 }
 
 .emailContainer {
-  padding: 1vw;
+  padding: 20px;
   border: 1px solid #e1e3e8;
   border-radius: 10px;
   background-color: #f7f8f9;
@@ -644,6 +640,7 @@ table {
 .emailContainer h5 {
   font-family: var(--font-primary);
   font-size: 26px;
+  font-weight: 600px;
 }
 
 .emailContainer p {
@@ -652,30 +649,31 @@ table {
 }
 
 .emailInputContainer {
-  width: 20vw;
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .emailInputContainer input {
   width: 100%;
   display: block;
-  margin-bottom: 10px;
+  border-radius: 8px;
   border: 1px solid #e1e3e8;
   background-color: white;
-  padding: 0.4vw;
-  padding-top: 0.6vw;
-  padding-bottom: 0.6vw;
+  padding: 10px;
   outline: none;
 }
 
-.emailInputContainer button {
+.emailButton {
+  width: 100%;
   color: white;
   border-radius: 10px;
   background-color: var(--color-primary);
   border: 0;
-  padding: 13px;
+  padding: 10px 16px;
   cursor: pointer;
   font-size: 16px;
-  width: 100%;
 }
 
 .applicationsSection {
@@ -1654,6 +1652,10 @@ table {
     padding-right: 80px;
   }
 
+  .emailInputContainer {
+    width: 349px;
+  }
+
   .homePageImage {
     height: 490px;
   }
@@ -1708,20 +1710,9 @@ table {
     margin-bottom: 30px;
   }
 
-  .emailInputContainer {
-    display: flex;
-    width: 100%;
-    gap: 10px;
-  }
-
   .emailInputContainer input {
     height: 40px !important;
     width: 100%;
-  }
-
-  .emailInputContainer button {
-    height: 40px !important;
-    width: 250px !important;
   }
 
   .accordionItem {
@@ -1754,6 +1745,11 @@ table {
     padding-left: 60px;
     padding-right: 60px;
   }
+
+  .emailInputContainer {
+    width: 269px;
+  }
+
   .paddingAll {
     padding: 80px 60px;
   }
@@ -1834,26 +1830,9 @@ table {
     height: 50px;
   }
 
-  .emailContainer {
-    padding: 16px;
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .emailInputContainer {
-    display: flex;
-    width: 100%;
-    gap: 10px;
-  }
-
   .emailInputContainer input {
     height: 40px !important;
     width: 100%;
-  }
-
-  .emailInputContainer button {
-    height: 40px !important;
-    width: 250px !important;
   }
 
   .homePageListItems img {
@@ -2055,6 +2034,23 @@ table {
     padding-right: 48px;
   }
 
+  .emailButton {
+    width: 158px;
+    padding: 10px 6px;
+    font-size: 12px;
+  }
+
+  .emailInputContainer {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .emailContainer {
+    padding: 16px;
+    flex-direction: column;
+    /* gap: 15px; */
+  }
+
   .paddingAll {
     padding: 80px 48px;
   }
@@ -2246,14 +2242,22 @@ table {
   }
 
   .paddingAll {
-  padding: 48px 16px;
-}
+    padding: 48px 16px;
+  }
 }
 
 /* Max to 360px rules */
 @media screen and (max-width: 360px) {
   .logoAndText {
     gap: 15px;
+  }
+
+  .emailInputContainer{
+    flex-direction: column;
+  }
+
+  .emailButton{
+    width: 100%;
   }
 
   .downloadBtnContainer {
@@ -2496,13 +2500,5 @@ table {
 
   .companyFeaturesTitle {
     font-size: 36px;
-  }
-
-  .emailInputContainer {
-    flex-direction: column;
-  }
-
-  .emailInputContainer button {
-    width: 100% !important;
   }
 }
