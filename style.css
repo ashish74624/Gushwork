@@ -682,9 +682,9 @@ table {
 }
 
 .applicationsTextContainer {
-  padding-left: 8%;
-  padding-right: 8%;
-  padding-top: 5vw;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 100px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -722,8 +722,8 @@ table {
 }
 
 .applicationsCard {
-  height: 450px;
-  max-width: 450px;
+  height: 420px;
+  max-width: 420px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1618,6 +1618,12 @@ table {
     padding: 80px;
   }
 
+  .applicationsTextContainer {
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 80px;
+  }
+
   .certifications {
     width: fit-content;
     display: block;
@@ -1754,6 +1760,12 @@ table {
     padding: 80px 60px;
   }
 
+  .applicationsTextContainer {
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 80px;
+  }
+
   .homePageImageContainer {
     width: 100%;
   }
@@ -1805,8 +1817,8 @@ table {
   }
 
   .applicationsCard {
-    height: 350px;
-    max-width: 350px;
+    /* height: 350px;
+    max-width: 350px; */
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -2055,6 +2067,12 @@ table {
     padding: 80px 48px;
   }
 
+  .applicationsTextContainer {
+    padding-left: 48px;
+    padding-right: 48px;
+    padding-top: 80px;
+  }
+
   .homePageImage {
     height: 704px;
   }
@@ -2225,6 +2243,10 @@ table {
     padding-right: 16px;
   }
 
+  .arrowContainer {
+    display: none;
+  }
+
   .homePageImage {
     height: 328px;
   }
@@ -2244,6 +2266,12 @@ table {
   .paddingAll {
     padding: 48px 16px;
   }
+
+  .applicationsTextContainer {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 48px;
+  }
 }
 
 /* Max to 360px rules */
@@ -2252,11 +2280,16 @@ table {
     gap: 15px;
   }
 
-  .emailInputContainer{
+  .applicationsCard {
+    height: 320px;
+    max-width: 320px;
+  }
+
+  .emailInputContainer {
     flex-direction: column;
   }
 
-  .emailButton{
+  .emailButton {
     width: 100%;
   }
 
