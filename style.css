@@ -7,6 +7,10 @@
   --font-secondary: "Inter", sans-serif;
 }
 
+.paddingAll {
+  padding: 100px;
+}
+
 .github {
   background-color: black;
   color: white;
@@ -438,7 +442,7 @@ th {
 .technicalContainer > .technicalTitle {
   font-weight: 700;
   font-family: var(--font-primary);
-  font-size: 44px;
+  font-size: 48px;
 }
 
 .technicalContainer > .technicalDescription {
@@ -493,6 +497,7 @@ table {
 .downloadBtnContainer {
   display: flex;
   justify-content: center;
+  margin-top: 56px;
 }
 
 .downloadBtn {
@@ -518,10 +523,6 @@ table {
 .companyFeaturesContainer {
   background-image: url("../assets//images/homeScreenBg.svg");
   border-bottom: 1px solid #e1e3e8;
-  padding-top: 5vw;
-  padding-bottom: 5vw;
-  padding-left: 8%;
-  padding-right: 8%;
 }
 
 .companyFeaturesTitle {
@@ -1615,6 +1616,10 @@ table {
     width: 130px;
   }
 
+  .paddingAll {
+    padding: 80px;
+  }
+
   .certifications {
     width: fit-content;
     display: block;
@@ -1637,7 +1642,7 @@ table {
   }
 
   .technicalContainer > .technicalDescription {
-    margin-bottom: 35px;
+    margin-bottom: 56px;
   }
 }
 
@@ -1748,6 +1753,9 @@ table {
   main {
     padding-left: 60px;
     padding-right: 60px;
+  }
+  .paddingAll {
+    padding: 80px 60px;
   }
 
   .homePageImageContainer {
@@ -2047,6 +2055,10 @@ table {
     padding-right: 48px;
   }
 
+  .paddingAll {
+    padding: 80px 48px;
+  }
+
   .homePageImage {
     height: 704px;
   }
@@ -2232,12 +2244,20 @@ table {
   .technicalContainer {
     padding: 48px 16px;
   }
+
+  .paddingAll {
+  padding: 48px 16px;
+}
 }
 
 /* Max to 360px rules */
 @media screen and (max-width: 360px) {
   .logoAndText {
     gap: 15px;
+  }
+
+  .downloadBtnContainer {
+    margin-top: 48px;
   }
 
   .MobilePriceInfo {
@@ -2462,6 +2482,7 @@ table {
 
   .technicalContainer > .technicalDescription {
     width: 100%;
+    margin-bottom: 48px;
   }
 
   table {
