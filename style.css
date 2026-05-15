@@ -784,6 +784,8 @@ table {
   width: 60%;
   margin: auto;
   font-size: 44px;
+  line-height: 120%;
+
   font-weight: 700;
   font-family: var(--font-primary);
   text-align: center;
@@ -925,7 +927,7 @@ table {
 }
 
 .resultsCard {
-  width: 420px ;
+  width: 420px;
   padding: 16px;
   border: 1px solid #e1e3e8;
   border-radius: 20px;
@@ -983,10 +985,6 @@ table {
 .portfolioSection {
   background-image: url("../assets//images/homeScreenBg.svg");
   border-bottom: 1px solid #e1e3e8;
-  padding-left: 8%;
-  padding-right: 8%;
-  padding-top: 5vw;
-  padding-bottom: 5vw;
 }
 
 .portfolioContainer {
@@ -1000,19 +998,20 @@ table {
   font-size: 28px;
   font-family: var(--font-primary);
   font-weight: 600;
-  line-height: 34px;
+  line-height: 120%;
 }
 
 .portfolioCard div {
   display: flex;
   flex-direction: column;
-  gap: 0.7vw;
+  gap: 16px;
   flex: 1;
   justify-content: flex-end;
 }
 .portfolioCard p {
   font-size: 16px;
   color: var(--color-text-secondary);
+  line-height: 24px;
 }
 
 .portfolioCard img {
@@ -1033,13 +1032,6 @@ table {
   padding: 0.5vw;
 }
 
-.portfolioCard button:hover {
-  background-color: #2b3990;
-  color: white;
-  border: 1px solid #2b3990;
-  transition: all;
-}
-
 .portfolioCard {
   background-color: white;
   border: 1px solid #cfd1d4;
@@ -1047,7 +1039,7 @@ table {
   padding: 16px;
   display: flex;
   flex-direction: column;
-  gap: 0.7vw;
+  gap: 12px;
 }
 
 .exportCall {
@@ -1952,10 +1944,6 @@ table {
     padding: 10px;
   }
 
-  .portfolioCard {
-    gap: 10px;
-  }
-
   .exportCall {
     flex-direction: column;
     gap: 15px;
@@ -2457,7 +2445,7 @@ table {
   }
 
   .portfolioCard img {
-    height: 200px;
+    height: 140px;
   }
   .portfolioCard p {
     font-size: 14px;
@@ -2517,9 +2505,9 @@ table {
   } */
 
   .resultsCard {
-    width: 280px ;
+    width: 280px;
     padding: 16px;
-    height: 407px ;
+    height: 407px;
   }
 
   /* .companyList {
