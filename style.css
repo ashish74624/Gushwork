@@ -905,10 +905,10 @@ table {
 }
 
 .resultsContainer {
-  padding-left: 8%;
-  padding-right: 8%;
-  padding-top: 5vw;
-  padding-bottom: 5vw;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 100px;
+  padding-bottom: 56px;
 }
 
 .resultsCarousel {
@@ -925,7 +925,7 @@ table {
 }
 
 .resultsCard {
-  width: 450px !important;
+  width: 420px ;
   padding: 16px;
   border: 1px solid #e1e3e8;
   border-radius: 20px;
@@ -1545,8 +1545,8 @@ table {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 24px;
-  height: 24px;
+  width: 16px;
+  height: 16px;
   background: #1e3a8a;
   color: white;
   border-radius: 50%;
@@ -1659,6 +1659,13 @@ table {
     padding-right: 80px;
   }
 
+  .resultsContainer {
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 80px;
+    padding-bottom: 56px;
+  }
+
   .emailInputContainer {
     width: 349px;
   }
@@ -1751,6 +1758,13 @@ table {
   main {
     padding-left: 60px;
     padding-right: 60px;
+  }
+
+  .resultsContainer {
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 80px;
+    padding-bottom: 56px;
   }
 
   .content-image {
@@ -2051,6 +2065,13 @@ table {
     padding-right: 48px;
   }
 
+  .resultsContainer {
+    padding-left: 48px;
+    padding-right: 48px;
+    padding-top: 80px;
+    padding-bottom: 56px;
+  }
+
   .content-description {
     font-size: 16px;
   }
@@ -2178,8 +2199,8 @@ table {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
     background: #1e3a8a;
     color: white;
     border-radius: 50%;
@@ -2249,6 +2270,13 @@ table {
   main {
     padding-left: 16px;
     padding-right: 16px;
+  }
+
+  .resultsContainer {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 48px;
+    padding-bottom: 56px;
   }
 
   .arrowContainer {
@@ -2489,8 +2517,9 @@ table {
   } */
 
   .resultsCard {
-    width: 90% !important;
+    width: 280px ;
     padding: 16px;
+    height: 407px ;
   }
 
   /* .companyList {
